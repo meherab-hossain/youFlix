@@ -8,7 +8,6 @@
                     <div class="card-header">
                         {{$channel->name}}
                     </div>
-
                     <div class="card-body">
                         <form id="update-channel" action="{{route('channels.update',$channel->id)}}" method="POST" enctype="multipart/form-data">
                             @csrf
