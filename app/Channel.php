@@ -24,6 +24,13 @@ class Channel extends Model implements HasMedia
         return null;
 
     }
+    public function editable(){
+        if(!auth()->check())
+            return false;
+        else{
+            return $this->user_id==auth()->user()->id;
+        }
+    }
 
 
     public function registerMediaConversions(Media $media = null)
