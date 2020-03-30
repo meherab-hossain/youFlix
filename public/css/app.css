@@ -10882,11 +10882,35 @@ a.text-dark:focus {
   }
 }
 
-.channel-avatar {
+/*.channel-avatar{
   height: 100px;
   width: 100px;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  border: 1px solid rgba(0,0,0,0.125);
   cursor: pointer;
+  position: relative;
+  .channel-avatar-overlay{
+    display: none;
+  }
+
+  &:hover{
+    .channel-avatar-overlay{
+      position: absolute;
+      height: 120px;
+      width: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:rgba(0,0,0,0.4);
+    }
+  }
+}*/
+
+.channel-avatar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .channel-avatar .channel-avatar-overlay {
@@ -10895,8 +10919,8 @@ a.text-dark:focus {
 
 .channel-avatar:hover .channel-avatar-overlay {
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 115%;
+  width: 154%;
   display: flex;
   justify-content: center;
   align-items: center;

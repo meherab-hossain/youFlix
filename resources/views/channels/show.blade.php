@@ -9,7 +9,7 @@
                         {{$channel->name}}
                     </div>
                     <div class="card-body">
-                        <form id="update-channel" action="{{route('channels.update',$channel->id)}}" method="POST" enctype="multipart/form-data">
+                        <form id="update-channel-form" action="{{route('channels.update',$channel->id)}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             @method('PATCH')
                             <div class="form-group row justify-content-center">
@@ -23,10 +23,11 @@
                                                 </g></g>
                                         </svg>
                                     </div>
+                                    <img src="{{$channel->image()}}" alt="">
                                 </div>
                             </div>
 
-                            <input onchange="document.getElementById('update-channel').submit()" style="display: none" type="file" id="image" name="image">
+                            <input onchange="document.getElementById('update-channel-form').submit()" style="display: none" type="file" id="image" name="image">
 
                             <div class="form-group">
                                 <label for="name" class="form-control-label">
