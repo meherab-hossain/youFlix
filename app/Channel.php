@@ -37,7 +37,7 @@ class Channel extends Model implements HasMedia
     {
         // TODO: Implement registerMediaConversions() method.
         $this->addMediaConversion('thumbnail')
-            ->width(150)
-            ->height(150);
+            ->width(100)
+            ->height(130);
     }
 }

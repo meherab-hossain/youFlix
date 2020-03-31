@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="831aa70b-0390-45df-9145-64c8219a2208" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Channel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Channel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ChannelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ChannelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/channels/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/channels/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,10 +33,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Channel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="400">
+              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
               <folding>
                 <element signature="e#25#67#0#PHP" expanded="true" />
               </folding>
@@ -42,10 +54,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_31_054709_create_subscriptions_table.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Subscription.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/channels/show.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="54" column="88" selection-start-line="54" selection-start-column="88" selection-end-line="54" selection-end-column="88" />
+            <state relative-caret-position="389">
+              <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
               <folding>
                 <element signature="e#1139#3814#0#HTML" />
                 <element signature="e#1431#1471#0#HTML" expanded="true" />
@@ -61,23 +100,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Requests/channels/UpdateChannelRequest.php">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-              <folding>
-                <element signature="e#159#581#0" />
-                <element signature="e#349#575#0" />
-              </folding>
+            <state relative-caret-position="395">
+              <caret line="24" column="103" selection-start-line="24" selection-start-column="103" selection-end-line="24" selection-end-column="103" />
             </state>
           </provider>
         </entry>
@@ -90,6 +116,7 @@
       <find>registered</find>
       <find>registerCon</find>
       <find>app.scss</find>
+      <find>web.php</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -106,16 +133,19 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_03_28_015552_create_channels_table.php" />
         <option value="$PROJECT_DIR$/app/Listeners/Users/CreateUserChannel.php" />
         <option value="$PROJECT_DIR$/app/User.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
         <option value="$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Schema/Blueprint.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_03_29_142844_create_media_table.php" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
         <option value="$PROJECT_DIR$/app/Http/Requests/channels/UpdateChannelRequest.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ChannelController.php" />
-        <option value="$PROJECT_DIR$/app/Channel.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_03_31_054709_create_subscriptions_table.php" />
+        <option value="$PROJECT_DIR$/app/Subscription.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/channels/show.blade.php" />
+        <option value="$PROJECT_DIR$/app/Channel.php" />
+        <option value="$PROJECT_DIR$/resources/sass/app.scss" />
       </list>
     </option>
   </component>
@@ -267,6 +297,13 @@
               <item name="youFlix" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youFlix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youFlix" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Requests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -276,6 +313,28 @@
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Requests" type="462c0819:PsiDirectoryNode" />
               <item name="channels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youFlix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youFlix" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youFlix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youFlix" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youFlix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youFlix" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="youFlix" type="b2602c69:ProjectViewProjectNode" />
+              <item name="youFlix" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="sass" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="youFlix" type="b2602c69:ProjectViewProjectNode" />
@@ -328,12 +387,12 @@
       <workItem from="1585486259857" duration="10081000" />
       <workItem from="1585501792909" duration="435000" />
       <workItem from="1585502660072" duration="385000" />
-      <workItem from="1585503875400" duration="14342000" />
+      <workItem from="1585503875400" duration="17105000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44225000" />
+    <option name="totallyTimeSpent" value="46988000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -341,9 +400,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.11422088" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.21558245" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.15220949" />
+      <window_info anchor="bottom" id="Terminal" order="0" visible="true" weight="0.049099836" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
@@ -542,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/spatie/laravel-medialibrary/src/HasMedia/HasMedia.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-182">
@@ -623,31 +675,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/app/Subscription.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="47" column="16" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
-          <folding>
-            <element signature="e#159#581#0" />
-            <element signature="e#349#575#0" />
-          </folding>
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Channel.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_03_31_054709_create_subscriptions_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="e#25#67#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/channels/UpdateChannelRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="352">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -661,10 +699,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="62" column="38" selection-start-line="62" selection-start-column="38" selection-end-line="62" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="24" column="103" selection-start-line="24" selection-start-column="103" selection-end-line="24" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/channels/UpdateChannelRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/channels/show.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="54" column="88" selection-start-line="54" selection-start-column="88" selection-end-line="54" selection-end-column="88" />
+        <state relative-caret-position="389">
+          <caret line="59" column="42" selection-start-line="59" selection-start-column="42" selection-end-line="59" selection-end-column="42" />
           <folding>
             <element signature="e#1139#3814#0#HTML" />
             <element signature="e#1431#1471#0#HTML" expanded="true" />
@@ -675,6 +734,30 @@
             <element signature="e#5002#5423#0#HTML" />
             <element signature="e#5600#5732#0#HTML" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Channel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
+          <folding>
+            <element signature="e#25#67#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="45" column="19" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
         </state>
       </provider>
     </entry>
