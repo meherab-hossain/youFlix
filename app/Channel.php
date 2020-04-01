@@ -16,6 +16,11 @@ class Channel extends Model implements HasMedia
        return $this->belongsTo(User::class);
     }
 
+    public function subscriptions(){
+        return $this->hasMany(Subscription::class);
+    }
+
+
     public function image(){
         //to get the image url
         if ($this->media()->first()){
