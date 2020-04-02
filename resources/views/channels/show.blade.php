@@ -57,9 +57,9 @@
                                     <h4 class="text-center">{{$channel->name}}</h4>
                                     <p class="text-center">{{$channel->description}}</p>
                                     <div class="text-center font-weight-bold">
-                                        <subscribe-button :subscriptions="{{$channel->subscriptions}}" inline-template>
+                                        <subscribe-button :channel="{{$channel}}" :subscriptions="{{$channel->subscriptions}}" inline-template>
                                             <button @click="toggoleSubscribtion" class="btn-danger">
-                                                subscribe
+                                               @{{owner?'':subscribed?'unsubscribe':'subscribe'}}@{{subscriptions.length}}
                                             </button>
                                         </subscribe-button>
                                     </div>
