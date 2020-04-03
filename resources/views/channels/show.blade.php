@@ -59,7 +59,7 @@
                                     <div class="text-center font-weight-bold">
                                         <subscribe-button :channel="{{$channel}}" :subscriptions="{{$channel->subscriptions}}" inline-template>
                                             <button @click="toggoleSubscribtion" class="btn-danger">
-                                               @{{owner?'':subscribed?'unsubscribe':'subscribe'}}@{{subscriptions.length}}
+                                               @{{owner?'':subscribed?'Unsubscribe':'Subscribe'}}@{{ ' '+count}} @{{ owner?'subscribers':'' }}
                                             </button>
                                         </subscribe-button>
                                     </div>
