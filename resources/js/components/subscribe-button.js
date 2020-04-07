@@ -21,10 +21,10 @@ Vue.component('subscribe-button',{
     },
     computed:{
         subscribed() {
-            if (!__auth()) {
+            if (!__auth()|| this.subscriptions.user_id===__auth().id ) {
                 return false
-            }else if(__auth() && this.subscriptions.find(subscription => subscription.user_id === __auth().id)){
-                return true
+            }else{
+                return !!this.subscription
             }
         },
         owner(){
@@ -32,6 +32,13 @@ Vue.component('subscribe-button',{
                 return true
             }else
                 return false
+        },
+        subscription(){
+          if(!__auth()){
+              return false
+          }  else {
+             return (__auth() && this.subscriptions.find(subscription => subscription.user_id === __auth().id))
+          }
         },
         count(){
             var SI_SYMBOL = ["", "k", "M", "G", "T", "P", "E"];
@@ -61,9 +68,25 @@ Vue.component('subscribe-button',{
     methods:{
         toggoleSubscribtion(){
             if(!__auth()){
-                alert('please login to subscribe')
+                alert('please Login to continue')
             }
-            return true
+            if(this.owner){
+                alert('you cant subscribe your own channel')
+            }
+            /*if(this.subscribed){
+                console.log('subscribe')
+                axios.delete(`http://127.0.0.1:8000/api/channels/${this.channel.id}/subscription/${this.subscription.id}`)
+            }else{
+                axios.post(`/channels/${this.channel.id}/subscription`)
+            }*/
+            if (this.subscribed) {
+                axios.delete(`/channels/${this.channel.id}/subscription/${this.subscription.id}`)
+                    .then((res)=>{
+                        console.log(res)
+                    })
+            } else {
+                axios.post(`/channels/${this.channel.id}/subscription`)
+            }
         }
     }
 });
